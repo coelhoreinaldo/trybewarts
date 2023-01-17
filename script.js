@@ -29,7 +29,29 @@ const textAreaCounter = () => {
     counter.textContent = 500 - textArea.value.length;
   });
 };
+
 textAreaCounter();
+
+// ISSO TUDO AQUI EMBAIXO É O REQUISITO 21,
+// const createFormData = () => {
+//   const createData = document.createElement('form');
+//   const nameInput = document.getElementById('input-name').value;
+//   const lastName = document.getElementById('input-lastname').value;
+//   const email = document.getElementById('email').value;
+
+//   return `Nome: ${nameXD} ${lastName}, Email: ${email}`
+// };
+
+// const replaceForms = () => {
+//   const submitBtn = document.getElementById('submit-btn');
+//   const evaluationForm = document.getElementById('evaluation-form');
+//   submitBtn.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     evaluationForm.style.display = 'none';
+//   });
+// };
+
+// replaceForms();
 
 window.onload = () => {
   agreement.addEventListener('change', enableSubmit);

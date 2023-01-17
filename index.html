@@ -17,8 +17,8 @@
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form method="get" class="trybewarts-login">
         <div>
-          <label>Email:</label>
-          <input name="email" type="email" id="email" placeholder="Email" />
+          <label for="email">Email:</label>
+          <input name="email" type="email" id="email" placeholder="Email"/>
           <br />
           <label>Senha:</label>
           <input
@@ -35,11 +35,11 @@
     <main>
       <form action="" method="get" id="evaluation-form">
         <div>
-          <input type="text" id="input-name" placeholder="Nome" />
-          <input type="text" id="input-lastname" placeholder="Sobrenome" />
+          <input type="text" id="input-name" placeholder="Nome" name="input-name"/>
+          <input type="text" id="input-lastname" placeholder="Sobrenome" name="-input-lastname"/>
         </div>
         <div>
-          <input type="email" id="input-email" placeholder="Email" />
+          <input type="email" id="input-email" placeholder="Email" name="input-email"/>
           <select name="house" id="house">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -79,11 +79,11 @@
             >Qual conteúdo você está com mais vontade de aprender?</label
           >
           <label for="hofs">
-            <input type="checkbox" class="subject" value="HoFs" id="hofs" />HoFs
+            <input type="checkbox" class="subject" value="HoFs" id="hofs" name="input-content"/>HoFs
           </label>
 
           <label for="jest">
-            <input type="checkbox" class="subject" value="Jest" id="jest" />Jest
+            <input type="checkbox" class="subject" value="Jest" id="jest" name="input-content"/>Jest
           </label>
 
           <label for="promises">
@@ -92,6 +92,7 @@
               class="subject"
               value="Promises"
               id="promises"
+              name="input-content"
             />Promises
           </label>
           <label for="react">
@@ -100,10 +101,11 @@
               class="subject"
               value="React"
               id="react"
+              name="input-content"
             />React
           </label>
           <label for="sql">
-            <input type="checkbox" class="subject" value="SQL" id="sql" />SQL
+            <input type="checkbox" class="subject" value="SQL" id="sql" name="input-content"/>SQL
           </label>
           <label for="python">
             <input
@@ -111,6 +113,7 @@
               class="subject"
               value="Python"
               id="python"
+              name="input-content"
             />Python
           </label>
         </div>
@@ -150,7 +153,7 @@
         <div>
           <label for="" class="textarea">Deixe seu comentário:</label>
           <textarea
-            name=""
+            name="textarea"
             id="textarea"
             cols="30"
             rows="10"
@@ -160,7 +163,7 @@
           <p id="counter"></p>
         </div>
         <div>
-          <input type="checkbox" name="" id="agreement" />
+          <input type="checkbox" name="agreement" id="agreement" />
           <label for="agreement" id="label-infos"
             >Você concorda com o uso das informações acima?</label
           >
