@@ -32,29 +32,29 @@ const textAreaCounter = () => {
 
 textAreaCounter();
 
-const createFormData = () => {
-  const nameInput = document.getElementById('input-name').value;
-  const lastName = document.getElementById('input-lastname').value;
-  const email = document.getElementById('input-email').value;
+// const createFormData = () => {
+//   const nameInput = document.getElementById('input-name').value;
+//   const lastName = document.getElementById('input-lastname').value;
+//   const email = document.getElementById('input-email').value;
 
-  const createData = document.createElement('form');
-  const main = document.querySelector('main');
-  main.appendChild(createData)
-  createData.innerHTML = `Nome: ${nameInput} ${lastName} \n
-  , Email: ${email}`;
-};
+//   const createData = document.createElement('form');
+//   const main = document.querySelector('main');
+//   main.appendChild(createData);
+//   createData.innerHTML = `Nome: ${nameInput} ${lastName} \n
+//   , Email: ${email}`;
+// };
 
-const replaceForms = () => {
-  const submitBtn = document.getElementById('submit-btn');
-  const evaluationForm = document.getElementById('evaluation-form');
-  submitBtn.addEventListener('click', (event) => {
-    event.preventDefault();
-    evaluationForm.style.display = 'none';
-    createFormData();
-  });
-};
+// const replaceForms = () => {
+//   const submitBtn = document.getElementById('submit-btn');
+//   const evaluationForm = document.getElementById('evaluation-form');
+//   submitBtn.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     evaluationForm.style.display = 'none';
+//     createFormData();
+//   });
+// };
 
-replaceForms();
+// replaceForms();
 
 window.onload = () => {
   agreement.addEventListener('change', enableSubmit);
