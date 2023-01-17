@@ -13,3 +13,14 @@ const login = () => {
 };
 
 login();
+
+const agreement = document.getElementById('agreement');
+
+const enableSubmit = () => {
+  const submitBtn = document.getElementById('submit-btn');
+  submitBtn.disabled = !agreement.checked;
+};
+
+window.onload = () => {
+  agreement.addEventListener('change', enableSubmit);
+};
