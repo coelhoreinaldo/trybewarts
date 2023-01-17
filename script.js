@@ -21,6 +21,16 @@ const enableSubmit = () => {
   submitBtn.disabled = !agreement.checked;
 };
 
+const textAreaCounter = () => {
+  const textArea = document.getElementById('textarea');
+  const counter = document.getElementById('counter');
+  counter.textContent = 500;
+  textArea.addEventListener('keyup', () => {
+    counter.textContent = 500 - textArea.value.length;
+  });
+};
+textAreaCounter();
+
 window.onload = () => {
   agreement.addEventListener('change', enableSubmit);
 };

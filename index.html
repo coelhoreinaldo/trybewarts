@@ -79,25 +79,40 @@
             >Qual conteúdo você está com mais vontade de aprender?</label
           >
           <label for="hofs">
-          <input type="checkbox" class="subject" value="HoFs" id="hofs"/>HoFs
-        </label>
+            <input type="checkbox" class="subject" value="HoFs" id="hofs" />HoFs
+          </label>
 
-        <label for="jest">
-          <input type="checkbox" class="subject" value="Jest" id="jest"/>Jest
-        </label>
+          <label for="jest">
+            <input type="checkbox" class="subject" value="Jest" id="jest" />Jest
+          </label>
 
-        <label for="promises">
-          <input type="checkbox" class="subject" value="Promises" id="promises"/>Promises
-        </label>
-        <label for="react">
-          <input type="checkbox" class="subject" value="React" id="react"/>React
-        </label>
-        <label for="sql">
-          <input type="checkbox" class="subject" value="SQL" id="sql"/>SQL
-        </label>
-        <label for="python">
-          <input type="checkbox" class="subject" value="Python" id="python"/>Python
-        </label>
+          <label for="promises">
+            <input
+              type="checkbox"
+              class="subject"
+              value="Promises"
+              id="promises"
+            />Promises
+          </label>
+          <label for="react">
+            <input
+              type="checkbox"
+              class="subject"
+              value="React"
+              id="react"
+            />React
+          </label>
+          <label for="sql">
+            <input type="checkbox" class="subject" value="SQL" id="sql" />SQL
+          </label>
+          <label for="python">
+            <input
+              type="checkbox"
+              class="subject"
+              value="Python"
+              id="python"
+            />Python
+          </label>
         </div>
         <div>
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
@@ -136,12 +151,13 @@
           <label for="" class="textarea">Deixe seu comentário:</label>
           <textarea
             name=""
-            id=""
+            id="textarea"
             cols="30"
             rows="10"
             maxlength="500"
             placeholder="Máximo de 500 caracteres..."
           ></textarea>
+          <p id="counter"></p>
         </div>
         <div>
           <input type="checkbox" name="" id="agreement" />
@@ -150,8 +166,8 @@
           >
         </div>
         <div>
-        <button type="submit" disabled id="submit-btn">Enviar</button>
-      </div>
+          <button type="submit" disabled id="submit-btn">Enviar</button>
+        </div>
       </form>
       <img
         src="./images/trybewarts-colored.svg"
@@ -159,9 +175,7 @@
         id="trybewarts-forms-logo"
       />
     </main>
-    <footer>
-      Direitos reservados à Trybewarts©
-    </footer>
+    <footer>Direitos reservados à Trybewarts©</footer>
     <script src="./script.js"></script>
   </body>
 </html>
