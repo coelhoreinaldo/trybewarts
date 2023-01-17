@@ -32,3 +32,8 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+#checkbox-content {
+    display: flex;
+    flex-direction: column;
+}
