@@ -35,7 +35,6 @@ textAreaCounter();
 const getContent = () => {
   const contents = document.querySelectorAll('input[name="input-content"]:checked');
   let contentText = '';
-  console.log(contents);
   for (let i = 0; i < contents.length; i += 1) {
     contentText += ` ${contents[i].value},`;
   }
@@ -49,6 +48,7 @@ const createFormData = () => {
   const email = `Email: ${document.getElementById('input-email').value}`;
   const house = `Casa: ${document.getElementById('house').value}`;
   const family = `Família: ${document.querySelector('input[name="family"]:checked').value}`;
+  // https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value
   const rate = document.querySelector('input[name="rate"]:checked').value;
   const avaliacao = `Avaliação: ${rate}`;
   const obs = `Observações: ${document.getElementById('textarea').value}`;
