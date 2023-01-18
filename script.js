@@ -32,6 +32,16 @@ const textAreaCounter = () => {
 
 textAreaCounter();
 
+const getContent = () => {
+  const contents = document.querySelectorAll('input[name="input-content"]:checked');
+  let teste = '';
+  console.log(contents);
+  for (let i = 0; i < contents.length; i += 1) {
+    teste += ` ${contents[i].value},`;
+  }
+  return teste;
+};
+
 const createFormData = () => {
   const nameInput = document.getElementById('input-name').value;
   const lastName = document.getElementById('input-lastname').value;
@@ -45,8 +55,9 @@ const createFormData = () => {
   const createData = document.createElement('form');
   createData.id = 'form-data';
   const main = document.querySelector('main');
+  const materias = `Matérias: ${getContent()}`;
   main.appendChild(createData);
-  createData.innerHTML = `${name},${email},${house},${family}, ${avaliacao}, ${obs}`;
+  createData.innerHTML = `${name},${email},${house},${family},${avaliacao},${obs}, ${materias}`;
 };
 
 const replaceForms = () => {
