@@ -34,12 +34,12 @@ textAreaCounter();
 
 const getContent = () => {
   const contents = document.querySelectorAll('input[name="input-content"]:checked');
-  let teste = '';
+  let contentText = '';
   console.log(contents);
   for (let i = 0; i < contents.length; i += 1) {
-    teste += ` ${contents[i].value},`;
+    contentText += ` ${contents[i].value},`;
   }
-  return teste;
+  return contentText;
 };
 
 const createFormData = () => {
