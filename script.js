@@ -32,29 +32,34 @@ const textAreaCounter = () => {
 
 textAreaCounter();
 
-// const createFormData = () => {
-//   const nameInput = document.getElementById('input-name').value;
-//   const lastName = document.getElementById('input-lastname').value;
-//   const email = document.getElementById('input-email').value;
+const createFormData = () => {
+  const nameInput = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  const name = `Nome: ${nameInput} ${lastName}`;
+  const email = `Email: ${document.getElementById('input-email').value}`;
+  const house = `Casa: ${document.getElementById('house').value}`;
+  const family = `Família: ${document.querySelector('input[name="family"]:checked').value}`;
+  const rate = document.querySelector('input[name="rate"]:checked').value;
+  const avaliacao = `Avaliação: ${rate}`;
+  const obs = `Observações: ${document.getElementById('textarea').value}`;
+  const createData = document.createElement('form');
+  createData.id = 'form-data';
+  const main = document.querySelector('main');
+  main.appendChild(createData);
+  createData.innerHTML = `${name},${email},${house},${family}, ${avaliacao}, ${obs}`;
+};
 
-//   const createData = document.createElement('form');
-//   const main = document.querySelector('main');
-//   main.appendChild(createData);
-//   createData.innerHTML = `Nome: ${nameInput} ${lastName} \n
-//   , Email: ${email}`;
-// };
+const replaceForms = () => {
+  const submitBtn = document.getElementById('submit-btn');
+  const evaluationForm = document.getElementById('evaluation-form');
+  submitBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    evaluationForm.style.display = 'none';
+    createFormData();
+  });
+};
 
-// const replaceForms = () => {
-//   const submitBtn = document.getElementById('submit-btn');
-//   const evaluationForm = document.getElementById('evaluation-form');
-//   submitBtn.addEventListener('click', (event) => {
-//     event.preventDefault();
-//     evaluationForm.style.display = 'none';
-//     createFormData();
-//   });
-// };
-
-// replaceForms();
+replaceForms();
 
 window.onload = () => {
   agreement.addEventListener('change', enableSubmit);
