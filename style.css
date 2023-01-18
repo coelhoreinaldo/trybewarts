@@ -29,20 +29,41 @@
   display: flex;
   width: 675px;
   flex-direction: column;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 16px;
+  box-shadow: 0 2px 32px rgb(203, 203, 203);
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+div {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#radio-family {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-#radio-family {
-  display: flex;
-  flex-direction: column;
+.div-rate {
+  margin: 24px 0;
+}
+
+#textarea-div {
+  margin: 0 0 24px;
 }
 
 #checkbox-content {
