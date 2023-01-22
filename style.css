@@ -9,7 +9,7 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: auto;
   padding: 8px;
 }
 
@@ -72,6 +72,8 @@ div {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 34px 0;
 }
 
 #trybewarts-forms-logo {
@@ -106,6 +108,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+button {
+  background-color: purple;
+  color: white;
 }
 
 /* commit */
