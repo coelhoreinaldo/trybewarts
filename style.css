@@ -82,6 +82,8 @@ main {
 
 .div-rate {
   margin: 24px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #textarea-div {
@@ -156,6 +158,7 @@ button {
 
   #textarea-div {
     width: 100%;
+    margin-top: 16px;
   }
 
   .agreement {
@@ -163,6 +166,10 @@ button {
     display: flex;
     gap: 5px;
     margin-bottom: 8px;
+  }
+
+  .div-rate {
+    margin-bottom: 16px;
   }
 
 }
