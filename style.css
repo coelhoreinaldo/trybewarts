@@ -115,6 +115,8 @@ footer {
 button {
   background-color: purple;
   color: white;
+  border-radius: 8px;
+  width: 100px;
 }
 
 /* commit */
